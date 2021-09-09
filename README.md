@@ -1,2 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
 
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="shortcut icon" href="/React-Discord-Clone/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"/><link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/><script src="https://webrtc.github.io/adapter/adapter-latest.js"></script><script src="https://apis.google.com/js/api.js"></script><link rel="stylesheet" href="prettify/sunburst.css"/><script type="text/javascript" src="prettify/prettify.js?"></script><link rel="manifest" href="/React-Discord-Clone/manifest.json"/><title>React Discord</title><link href="/React-Discord-Clone/static/css/2.c1f95b34.chunk.css" rel="stylesheet"><link href="/React-Discord-Clone/static/css/main.089ee2a6.chunk.css" rel="stylesheet"></head><body id="body"><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div><script>!function(f){function e(e){for(var r,t,n=e[0],o=e[1],u=e[2],i=0,l=[];i<n.length;i++)t=n[i],c[t]&&l.push(c[t][0]),c[t]=0;for(r in o)Object.prototype.hasOwnProperty.call(o,r)&&(f[r]=o[r]);for(s&&s(e);l.length;)l.shift()();return p.push.apply(p,u||[]),a()}function a(){for(var e,r=0;r<p.length;r++){for(var t=p[r],n=!0,o=1;o<t.length;o++){var u=t[o];0!==c[u]&&(n=!1)}n&&(p.splice(r--,1),e=i(i.s=t[0]))}return e}var t={},c={1:0},p=[];function i(e){if(t[e])return t[e].exports;var r=t[e]={i:e,l:!1,exports:{}};return f[e].call(r.exports,r,r.exports,i),r.l=!0,r.exports}i.m=f,i.c=t,i.d=function(e,r,t){i.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},i.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.t=function(r,e){if(1&e&&(r=i(r)),8&e)return r;if(4&e&&"object"==typeof r&&r&&r.__esModule)return r;var t=Object.create(null);if(i.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:r}),2&e&&"string"!=typeof r)for(var n in r)i.d(t,n,function(e){return r[e]}.bind(null,n));return t},i.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return i.d(r,"a",r),r},i.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},i.p="/React-Discord-Clone/";var r=window.webpackJsonp=window.webpackJsonp||[],n=r.push.bind(r);r.push=e,r=r.slice();for(var o=0;o<r.length;o++)e(r[o]);var s=n;a()}([])</script><script src="/React-Discord-Clone/static/js/2.fdee59c0.chunk.js"></script><script src="/React-Discord-Clone/static/js/main.3a6d44ee.chunk.js"></script></body></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord UI Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <noscript>Please enable JavaScript to access this website.</noscript>
+    <div class="rootDiv">
+        <div class="side-bar">
+            <div class="nav">
+                <div class="guildSettings">
+                    <div class="navguild">
+                        <div class="guild-opener">
+                            <div class="navGuildItems">
+                                <h4 class="guildSelectorName">Server Name</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="userBox">
+                <img src="https://cdn.discordapp.com/embed/avatars/0.png" alt="avatar" class="userAvatar">
+                <div class="userinfo">
+                    <h4 class="username">Username</h4>
+                    <h6 class="discriminator">#1234</h6>
+                </div>
+                <div class="usermenuicons">
+                    <div class="mic" id="micToggle"></div>
+                    <div class="headphone" id="headphoneToggle"></div>
+                    <div class="settings" id="settingsToggle"></div>
+                </div>
+            </div>
+        </div>
+        <div class="servers">
+            <div class="homebutton">
+                <svg class="homeIcon" aria-hidden="false" width="28" height="20" viewBox="0 0 28 20">
+                    <path fill="#FFFFFF"
+                        d="M20.6644 20C20.6644 20 19.8014 18.9762 19.0822 18.0714C22.2226 17.1905 23.4212 15.2381 23.4212 15.2381C22.4384 15.881 21.5034 16.3334 20.6644 16.6429C19.4658 17.1429 18.3151 17.4762 17.1884 17.6667C14.887 18.0953 12.7774 17.9762 10.9795 17.6429C9.61301 17.381 8.43836 17 7.45548 16.6191C6.90411 16.4048 6.30479 16.1429 5.70548 15.8096C5.63356 15.7619 5.56164 15.7381 5.48973 15.6905C5.44178 15.6667 5.41781 15.6429 5.39384 15.6191C4.96233 15.381 4.7226 15.2143 4.7226 15.2143C4.7226 15.2143 5.87329 17.1191 8.91781 18.0238C8.19863 18.9286 7.31164 20 7.31164 20C2.0137 19.8333 0 16.381 0 16.381C0 8.7144 3.45205 2.50017 3.45205 2.50017C6.90411 -0.07123 10.1884 0.000197861 10.1884 0.000197861L10.4281 0.285909C6.11301 1.52399 4.12329 3.40493 4.12329 3.40493C4.12329 3.40493 4.65068 3.11921 5.53767 2.71446C8.10274 1.59542 10.1404 1.2859 10.9795 1.21447C11.1233 1.19066 11.2432 1.16685 11.387 1.16685C12.8493 0.976379 14.5034 0.92876 16.2295 1.11923C18.5068 1.38114 20.9521 2.0478 23.4452 3.40493C23.4452 3.40493 21.5514 1.61923 17.476 0.381146L17.8116 0.000197861C17.8116 0.000197861 21.0959 -0.07123 24.5479 2.50017C24.5479 2.50017 28 8.7144 28 16.381C28 16.381 25.9623 19.8333 20.6644 20ZM9.51712 8.88106C8.15068 8.88106 7.07192 10.0715 7.07192 11.5239C7.07192 12.9763 8.17466 14.1667 9.51712 14.1667C10.8836 14.1667 11.9623 12.9763 11.9623 11.5239C11.9863 10.0715 10.8836 8.88106 9.51712 8.88106ZM18.2671 8.88106C16.9007 8.88106 15.8219 10.0715 15.8219 11.5239C15.8219 12.9763 16.9247 14.1667 18.2671 14.1667C19.6336 14.1667 20.7123 12.9763 20.7123 11.5239C20.7123 10.0715 19.6336 8.88106 18.2671 8.88106Z">
+                    </path>
+                </svg>
+            </div>
+            <hr class="server-divider" />
+            <div class="server active">
+                <p class="servericon">SN</p>
+            </div>
+            <div class="server">
+                <p class="servericon">S1</p>
+            </div>
+            <div class="server">
+                <p class="servericon unread">S2</p>
+            </div>
+            <div class="server">
+                <img class="servericon" src="https://cdn.discordapp.com/embed/avatars/0.png">
+            </div>
+            <div class="server">
+                <img class="servericon unread" src="https://cdn.discordapp.com/embed/avatars/1.png">
+            </div>
+            <div class="server">
+                <img class="servericon" src="https://cdn.discordapp.com/embed/avatars/2.png">
+            </div>
+            <div class="server">
+                <img class="servericon" src="https://cdn.discordapp.com/embed/avatars/3.png">
+            </div>
+            <div class="server">
+                <img class="servericon" src="https://cdn.discordapp.com/embed/avatars/4.png">
+            </div>
+            <div class="server invite">
+                <p class="inviteButton">+</p>
+            </div>
+        </div>
+        <div class="container"></div>
+        <div class="members"></div>
+    </div>
+</body>
+
+</html>
